@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #0a1014;
+  background-image:
+    linear-gradient(180deg, rgba(7, 19, 25, 0.92), rgba(7, 19, 25, 0.92)),
+    linear-gradient(180deg, rgba(23, 42, 52, 0.6) 0%, rgba(14, 28, 35, 0.9) 100%);
+  color: #f8fafc;
+  font-family: var(--font-geist-sans), system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+}
+
+.glass-surface {
+  background: linear-gradient(135deg, rgba(38, 60, 71, 0.9), rgba(11, 21, 26, 0.9));
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 20px 60px rgba(6, 12, 17, 0.6);
+  backdrop-filter: blur(18px);
+}
+
+.chat-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+}
+
+.chat-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chat-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.chat-scroll::-webkit-scrollbar-thumb {
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.chat-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
